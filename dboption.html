@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #ababab;
+            overflow: hidden;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        .h2{
+            margin-bottom: 40px;
+            font-size: 40px;
+        }
+        .navbar a {
+            float: right;
+            display: block;
+            color: #020202;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            margin-top: 30px;
+            margin-bottom: 8px;
+            margin-right: 10px;
+            width: 120px;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .navbar img {
+            float: left;
+            margin: 10px;
+            height: 90px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 15px 20px;
+            font-size: 14px;
+            width: 180px;
+            margin: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .button-group {
+            margin-bottom: 20px;
+        }
+        .footer {
+            background-color: #ababab;
+            color: #010101;
+            text-align: center;
+            padding: 5px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="new-logo.png" alt="Logo">
+        <a href="#">Contact Us</a>
+        <a href="examtime.php">Time Table</a>
+        <a href="allotform.php">Allotment</a>
+        <a href="index.html">Home</a>
+    </div>
+    <h2 class="h2">Database Operations</h2>
+    <div class="button-group">
+        <button onclick="window.location.href = 'insert-course.php';">Insert Course</button>
+        <button onclick="window.location.href = 'insert-exam.php';">Insert Exam</button>
+        <button onclick="window.location.href = 'insert-instructor.php';">Insert Instructor</button>
+        <button onclick="window.location.href = 'insert-student.php';">Insert Student</button>
+        <button onclick="window.location.href = 'insert-classroom.php';">Insert Classroom</button>
+        <button onclick="window.location.href = 'insert-slot.php';">Insert Slot</button>
+        <button onclick="window.location.href = 'insert-dept.php';">Insert Department</button>
+    </div>
+    <div class="button-group">
+        <button onclick="window.location.href = 'delete-course.php';">Delete Course</button>
+        <button onclick="window.location.href = 'delete-exam.php';">Delete Exam</button>
+        <button onclick="window.location.href = 'delete-instructor.php';">Delete Instructor</button>
+        <button onclick="window.location.href = 'delete-student.php';">Delete Student</button>
+        <button onclick="window.location.href = 'delete-classroom.php';">Delete Classroom</button>
+        <button onclick="window.location.href = 'delete-slot.php';">Delete Slot</button>
+        <button onclick="window.location.href = 'delete-dept.php';">Delete Department</button>
+    </div>
+    <div class="button-group">
+        <button onclick="window.location.href = 'update-course.php';">Update Course</button>
+        <button onclick="window.location.href = 'update-exam.php';">Update Exam</button>
+        <button onclick="window.location.href = 'update-instructor.php';">Update Instructor</button>
+        <button onclick="window.location.href = 'update-student.php';">Update Student</button>
+        <button onclick="window.location.href = 'update-classroom.php';">Update Classroom</button>
+        <button onclick="window.location.href = 'update-slot.php';">Update Slot</button>
+        <button onclick="window.location.href = 'update-dept.php';">Update Department</button>
+    </div>
+    <button onclick="window.location.href = 'import-page.php';">Import Data</button>
+    <div class="footer">
+        <p>&copy; 2024 SDMCET. All rights reserved.</p>
+    </div>
+</body>
+</html>
